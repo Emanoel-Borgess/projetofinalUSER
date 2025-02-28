@@ -1,5 +1,5 @@
 //
-//  Home.swift
+//  User.swift
 //  projeto_final01
 //
 //  Created by Turma01-8 on 26/02/25.
@@ -39,11 +39,11 @@ struct Chat: View {
                     HStack {
                         VStack {
                             List {
-                                UserMenuItem(icon: "person.fill", title: "Minha Conta", destination: MinhaConta())
-                                UserMenuItem(icon: "calendar", title: "Minhas Sessões", destination: MinhasSessões())
-                                UserMenuItem(icon: "doc.text.fill", title: "Meus Planos", destination: Planos())
-                                UserMenuItem(icon: "leaf.fill", title: "Planos de cuidados", destination: PlanosdeCuidados())
-                                UserMenuItem(icon: "heart.fill", title: "Meus Favoritos", destination: Favoritos())
+                                UserMenuItem(icon: "person.fill", title: "Minha Conta", destination: Home())
+                                UserMenuItem(icon: "calendar", title: "Minhas Sessões", destination: Home())
+                                UserMenuItem(icon: "doc.text.fill", title: "Meus Planos", destination: Home())
+                                UserMenuItem(icon: "leaf.fill", title: "Planos de cuidados", destination: Home())
+                                UserMenuItem(icon: "heart.fill", title: "Meus Favoritos", destination: Home())
                             }
                             .listStyle(PlainListStyle())
                             .frame(maxWidth: .infinity, maxHeight: 450)
